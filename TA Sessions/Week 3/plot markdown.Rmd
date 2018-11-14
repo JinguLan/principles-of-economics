@@ -3,9 +3,9 @@ title: "Plot markdown"
 author: "Lina"
 date: "2018/11/2"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
   word_document: default
 ---
 
@@ -20,7 +20,7 @@ rm(list=ls())
 
 
 ```{r}
-income=read.csv("E:/Rstudy/income.csv")
+income=read.csv("D:/principles-of-economics/TA Sessions/Week 3/income.csv")
 x=income$score
 y=income$income
 plot(x,type="p",main="得分散点图")
